@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>bubu | RELAX</title>
     <link rel="shortcut icon" href="./src/bubuRelax_logo_white.png">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="TemplateData/style.css?v=20260228-1">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -51,11 +51,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/bubuRELAX.loader.js";
+      var cacheVersion = "20260228-1";
+      var loaderUrl = buildUrl + "/bubuRELAX.loader.js?v=" + cacheVersion;
       var config = {
-        dataUrl: buildUrl + "/bubuRELAX.data",
-        frameworkUrl: buildUrl + "/bubuRELAX.framework.js",
-        codeUrl: buildUrl + "/bubuRELAX.wasm",
+        dataUrl: buildUrl + "/bubuRELAX.data?v=" + cacheVersion,
+        frameworkUrl: buildUrl + "/bubuRELAX.framework.js?v=" + cacheVersion,
+        codeUrl: buildUrl + "/bubuRELAX.wasm?v=" + cacheVersion,
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "bubuRELAX",
